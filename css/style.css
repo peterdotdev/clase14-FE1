@@ -66,6 +66,15 @@ header > * {
     height: 4px;
 }
 
+html, body {
+    height: 100%;
+}
+
+.page-content {
+    min-height: 100%;
+    margin-bottom: -44px;
+}
+
 /*****************
 ****** MAIN ******
 *****************/
@@ -76,7 +85,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height: 89vh;
     padding-bottom: 64px;
     padding-top: 12px;
 }
@@ -88,7 +96,7 @@ main {
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 48px;
-    max-height: 406px;
+    height: 406px;
     position: relative;
     text-align: center;
     width: 250px;
@@ -230,6 +238,7 @@ footer {
 @media (min-width:1513px) {
     main {
         align-items: center;
+        height: 93vh;
     }
     .plus{
         top: 50%;
